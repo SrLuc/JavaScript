@@ -1,0 +1,7 @@
+function dadosDoCirculo(x, y) {
+  const pi = 3.14;
+  var raio = 5;
+  const areadoCiruclo = pi * raio * raio;
+  return areadoCiruclo;
+}
+console.log("Area = " + dadosDoCirculo(2, 5));

@@ -1,0 +1,13 @@
+
+
+//função para calcular a área de um hexagono
+
+// area do triangulo b*h/2
+
+function calcularHexagono(base,altura){
+    const areaTriangulo = (base*altura)/2;
+    const areaHexagono = areaTriangulo * 6;
+    return areaHexagono;
+}
+
+console.log(calcularHexagono(4,6));
