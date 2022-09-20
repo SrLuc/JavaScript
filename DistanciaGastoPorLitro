@@ -1,0 +1,8 @@
+function percorrer(litros) {
+  const gasolina = 5.5;
+  var distancia = 20 * litros
+  var gasto = gasolina*litros
+  console.log("com " + litros + " litro de gasolina voce consegue percorrer " + distancia + " kilometros e vai gastar R$ "+gasto);
+}
+
+percorrer(2);
