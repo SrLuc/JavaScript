@@ -2,7 +2,7 @@
 
 function calcular(numero1, numero2) {
   var n1 = 0,
-    n2 = 0;
+      n2 = 0;
   var result;
   for (let i = 0; i < 10; i++) {
     n1++, n2++;
