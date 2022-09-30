@@ -1,0 +1,14 @@
+const telefone = {
+  numero: 81996271309,
+  operadora: "Tim",
+
+  tocar: function (bool) {
+    if (bool === true) {
+      console.log("ring ring ring");
+    } else {
+      console.log("sorry, try again");
+    }
+  },
+};
+
+telefone.tocar(false);
