@@ -54,9 +54,6 @@ const NomesParaTestar = [
   const quadradoPerfeito = NumerosParaTestar.map(numero => numero * numero);
   //console.log(quadradoPerfeito);
   
-  //const trocarPrimeiraLetraParaUpperCase = NomesParaTestar.map(nomes => nomes[0].toUpperCase());
-  //console.log(trocarPrimeiraLetraParaUpperCase);
-  
   const filtarNomes = NomesParaTestar.filter(pessoa => pessoa[1] == 'A');
   //console.log(filtarNomes);
   
@@ -83,3 +80,11 @@ const NomesParaTestar = [
   
   const quantosNumeroParaTestar = NumerosParaTestar.filter(numero => numero);
   //console.log(quantosNumeroParaTestar.length);
+
+  const somarNumero = NumerosParaTestar.reduce((element, element1) => element + element1);
+  //console.log(somarNumero);
+
+  const saberMedia = NumerosParaTestar.reduce((prev, curr) => prev+curr);
+  //console.log(saberMedia/NumerosParaTestar.length);
+
+  
