@@ -1,4 +1,5 @@
-const NomesParaTestar = [
+const NomesParaTestar = 
+[
     "gabriel berenguer",
     "ruan rickelme",
     "maria eduarda",
@@ -53,6 +54,9 @@ const NomesParaTestar = [
   
   const quadradoPerfeito = NumerosParaTestar.map(numero => numero * numero);
   //console.log(quadradoPerfeito);
+
+  const nomeComLetraMaiscula = NomesParaTestar.map(Letra => Letra[0].toUpperCase() + Letra.substring(1));
+  //console.log(nomeComLetraMaiscula);
   
   const filtarNomes = NomesParaTestar.filter(pessoa => pessoa[1] == 'A');
   //console.log(filtarNomes);
