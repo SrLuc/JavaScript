@@ -1,11 +1,12 @@
 class Phone {
-  constructor(model, batteryLevel,sound) {
+  constructor(model, batteryLevel, concetion) {
     this.model = model;
     this.batteryLevel = batteryLevel;
+    this.concetion = concetion;
+    this.sound = 0;
     this.ligth = 0;
     this.power = true;
     this.display = true;
-    this.sound = this.sound;
   }
 
   toCharge(points, on) {
@@ -51,21 +52,30 @@ class Phone {
     status == true ? console.log("displayON") : console.log("displayOFF");
   }
 
-
-  makeNoise(level){
+  makeNoise(level) {
     this.volume = level;
 
+    if (this.power == false) {
+      console.log("Volume 0");
+    } else if (level >= 1 && level <= 30) {
+      console.log("System volume:" + level);
+    }
   }
 
+  conect(status) {
+    status == true ? console.log("Conected") : console.log("No Sinal");
+  }
 }
 
-const iphone = new Phone("14 ProMax", 10);
+const iphone = new Phone("14 ProMax", 10, 15);
 iphone.toCharge(2, false);
 iphone.illuminate(5);
-iphone.powerOn(false);
+iphone.powerOn(true);
 iphone.displayOn(false);
-
+iphone.makeNoise(25);
+iphone.conect(false);
 console.log("");
+
 /* 
 const samsumg = new Phone("Samsumg A25", 69);
 samsumg.toCharge(20, true);
