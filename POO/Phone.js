@@ -1,9 +1,11 @@
 class Phone {
-  constructor(model, batteryLevel) {
+  constructor(model, batteryLevel,sound) {
     this.model = model;
     this.batteryLevel = batteryLevel;
     this.ligth = 0;
     this.power = true;
+    this.display = true;
+    this.sound = this.sound;
   }
 
   toCharge(points, on) {
@@ -43,16 +45,30 @@ class Phone {
     this.power = status;
     status == true ? console.log("powerOn") : console.log("powerOFF");
   }
+
+  displayOn(status) {
+    this.display = status;
+    status == true ? console.log("displayON") : console.log("displayOFF");
+  }
+
+
+  makeNoise(level){
+    this.volume = level;
+
+  }
+
 }
 
 const iphone = new Phone("14 ProMax", 10);
 iphone.toCharge(2, false);
 iphone.illuminate(5);
 iphone.powerOn(false);
+iphone.displayOn(false);
 
 console.log("");
-
+/* 
 const samsumg = new Phone("Samsumg A25", 69);
 samsumg.toCharge(20, true);
 samsumg.illuminate(0);
 samsumg.powerOn(true);
+ */
