@@ -8,6 +8,8 @@ class Livro{
     }
 }
 
+//Criando e Instâncias
+
 const livro1 = new Livro('J.R.R Martin', 'Dança dos Dragões', 2018);
 const livro2 = new Livro('Tolkien', 'A sociedade do Anel', 1917);
 const livro3 = new Livro('Chirs', 'As vantagens de ser invisivel', 2009);
